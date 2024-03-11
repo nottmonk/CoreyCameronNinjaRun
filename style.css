@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+
+.container-flex{
+display: flex;
+justify-content: space-between;
+
+}
+
+
+#Nin {
+    background-color: rgb(1, 10, 4);
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 50vh;
+    
+
+    
+    
+}
+
+.jmp {
+    animation: moving 0.5s linear;
+    animation-delay: 0.6ms;
+}
+
+@keyframes moving {
+    0% {
+        top: 50vh;
+    }
+
+    30% {
+        top: 35vh;
+    }
+    50% {
+        top: 25vh;
+    }
+    80%{
+        top: 35vh
+    }
+    100%{
+        top: 50vh
+    }
+
+
+
+}
+
+#obst {
+    background-color: rgb(240, 10, 10);
+    width: 50px;
+    height: 50px;
+    top: 52vh;
+    position: relative;
+    /* animation: enemy 2s infinite; */
+}
+
+
+
+@keyframes enemy {
+    0%{
+        left:100%;
+    }
+    100%{
+        left: 0%;
+    }
+}

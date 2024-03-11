@@ -1,11 +1,11 @@
 # Ninja Run Game
 ### 3/7/2024
 ## By: Corey Cameron
-[Link](https://github.com/nottmonk) [link](https://www.linkedin.com/in/corey-cameron-319873221/)
+[GitHub](https://github.com/nottmonk) [Linkedin](https://www.linkedin.com/in/corey-cameron-319873221/)
 
 # Description
 
-A game where a has to run and jump and dodge diffrent obsticles 
+A game where a  ninja has to run and jump and dodge diffrent obstacles 
 
 # Psuedocode
 - Basic movement of the game need to have running and jumping(maybe ducking)
