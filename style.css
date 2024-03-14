@@ -1,207 +1,191 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  font-family: "Micro 5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
-body{
-    height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
+
+
+
+body {
+  background-color: burlywood;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-    position: relative;
+  position: relative;
 }
 
-
-.container-flex{
-/* background-image: url('https://wallpapercave.com/wp/wp9221960.jpg'); */
-display: flex;
-position: relative;
-width: 60%;
-height: 50vh;
-border: 10px solid; 
-align-items: flex-end;
-overflow: hidden;
-/* padding: 200px;*/
+.container-flex {
+  /* background-image: url('https://wallpapercave.com/wp/wp9221960.jpg'); */
+  display: flex;
+  position: relative;
+  width: 60%;
+  height: 50vh;
+  border: 10px solid;
+  align-items: flex-end;
+  overflow: hidden;
+  /* padding: 200px;*/
 }
 
-.img{
-    background-image: url(images/gaming\ background2.png);
-    object-fit: cover;
-    background-size: cover;
-    background-position: left bottom;
-    height: 120%;
-    width: 240%;
-    position: absolute;
-    z-index: -99;
-
+.img {
+  background-image: url(images/gaming\ background2.png);
+  object-fit: cover;
+  background-size: cover;
+  background-position: left bottom;
+  height: 120%;
+  width: 240%;
+  position: absolute;
+  z-index: -99;
 }
-.bckImg{
-    animation: 8s linear 1s infinite running bckAnimation; 
+.bckImg {
+  animation: 8s linear 1s infinite running bckAnimation;
 }
 
-   
-@keyframes bckAnimation{
-    0% {
-        transform: translateX(0); /* Start the image at the left edge of the container */
-       }
-       100% {
-        transform: translateX(-50%); /* End the image at the right edge of the container */
-       }
-    /* 0% {
+@keyframes bckAnimation {
+  0% {
+    transform: translateX(
+      0
+    ); /* Start the image at the left edge of the container */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* End the image at the right edge of the container */
+  }
+  /* 0% {
         transform: translate3d(0,0,0);
     }
     100% {
         transform: translate3d(-90px, 0, 0);
     } */
-    /* 0% { */
-        /* background-position: 0% 50%
+  /* 0% { */
+  /* background-position: 0% 50%
         }
         100% {
         background-position: 100% 50%
         } */
 }
- 
-#dist{
-    display: flex;
-    align-items: center;
-}   
-
-
-
 
 .Nin {
-    background-image: url(images/ninja2.png);
-    background-size: cover;
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    position: center;
-    /* bottom: 50px;  */
-    
-
-    
-    
+  background-image: url(images/ninja2.png);
+  background-size: cover;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: center;
+  /* bottom: 50px;  */
 }
 
 .jmp {
-    animation: moving 0.7s linear;
-    animation-delay: 0.6ms;
+  animation: moving 0.7s linear;
+  animation-delay: 0.6ms;
 }
 
 @keyframes moving {
-    0% {
-        margin-bottom: 0px;
-    }
+  0% {
+    margin-bottom: 0px;
+  }
 
-    20% {
-        margin-bottom: 90px
-        
-         
-    }
-    35%{
-        margin-bottom: 95px ;
-    }
-    50% {
-        margin-bottom: 100px; 
-    }
-    65%{
-        margin-bottom: 95px;
-    }
-    80%{
-        margin-bottom: 90px;  
-    }
-    90%{
-        margin-bottom: 30px
-    }
-    100%{
-       margin-bottom: 0px;
-    }
-
-
-
+  20% {
+    margin-bottom: 90px;
+  }
+  35% {
+    margin-bottom: 95px;
+  }
+  50% {
+    margin-bottom: 100px;
+  }
+  65% {
+    margin-bottom: 95px;
+  }
+  80% {
+    margin-bottom: 90px;
+  }
+  90% {
+    margin-bottom: 30px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
 }
 
 #obst {
-    display: inline-block;
-    background-color: rgb(240, 10, 10);
-    width: 30px;
-    height: 40px;
-    /* position: relative; */
-    /* animation: enemy 2s infinite linear; */
+  display: inline-block;
+  background-color: rgb(240, 10, 10);
+  width: 30px;
+  height: 40px;
 }
 
 .speedStart {
-     animation: enemy 5s infinite linear;
+  animation: enemy 5s infinite linear;
 }
 
-.speedFirst{
-    animation: enemy 4s infinite linear;
+.speedFirst {
+  animation: enemy 4s infinite linear;
 }
 
-.speedSecond{
-    animation: enemy 3s infinite linear;
+.speedSecond {
+  animation: enemy 3s infinite linear;
 }
 
-
-.speedThird{
-    animation: enemy 1s infinite linear;
+.speedThird {
+  animation: enemy 1s infinite linear;
 }
-.speedForth{
-    animation: enemy 900ms infinite linear;
+.speedForth {
+  animation: enemy 900ms infinite linear;
 }
-
 
 @keyframes enemy {
-    0%{
-        margin-left: 99%;
-    }
-    100%{
-        margin-left: -20%; 
-    }
-} 
-
-.touch{
-    background-color: aqua;
+  0% {
+    margin-left: 99%;
+  }
+  100% {
+    margin-left: -20%;
+  }
 }
 
-#dist{
-    font-size: 50px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
+.touch {
+  background-color: aqua;
 }
 
+#dist {
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 
 #restartButton {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #restartButton:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        font-size: 3vw; /* Increase font size for smaller screens */
-    }
+  body {
+    font-size: 3vw; /* Increase font size for smaller screens */
+  }
 }
 
 @media screen and (max-width: 480px) {
-    body {
-        font-size: 4vw; /* Increase font size for even smaller screens */
-    }
+  body {
+    font-size: 4vw; /* Increase font size for even smaller screens */
+  }
 }
-
-
-
-
-

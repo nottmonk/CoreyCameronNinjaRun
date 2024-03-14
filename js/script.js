@@ -69,7 +69,7 @@ isAlive = setInterval(function () {
 }, 30);
 
 counter = setInterval(function () {
-  distant.innerText = `Distance: ${startDistance}`;
+  distant.innerText = `Distances: ${startDistance}`;
   startDistance++;
 }, 100);
 
@@ -84,7 +84,7 @@ function gameOver() {
 }
 
 function stopBackground() {
-  bckImg.classList.remove('bckImg')
+  bckImg.classList.remove("bckImg");
 }
 
 function enemyAnimation() {
@@ -100,24 +100,26 @@ function stopEnemyAnimation() {
   enemy.classList.remove("speedForth");
 }
 
+// function checkScore() {
+//   if (parseInt(distant.innerText) >= score) {
+//     localStorage.setItem("distance", parseInt(distant.innerText)) ;
+//     document.getElementById("hScore").innerHTML = `HighScore:${parseInt(
+//       distant.innerText)}`;
+//   } else {
+//     return;
+//   }
+// }
+
 function checkScore() {
-  if (parseInt(distant.innerText) >= score) {
-    localStorage.setItem("distance", parseInt(distant.innerText));
-    document.getElementById("hScore").innerHTML = `HighScore:${parseInt(
-      distant.innerText)}`;
-  } else {
-    return;
+  if (startDistance >= score) {
+    score = startDistance; // Update the score variable
+    localStorage.setItem("distance", score);
+    document.getElementById("hScore").innerHTML = `highScore${score}`;
   }
 }
-
-
-
 
 document.getElementById("hScore").innerHTML = `HighScore:${score}`;
 
 document.getElementById("restartButton").onclick = function () {
   window.location.href = "Startgame.html";
 };
-
-
-console.log();
