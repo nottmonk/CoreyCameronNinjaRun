@@ -114,7 +114,7 @@ function checkScore() {
   if (startDistance >= score) {
     score = startDistance; // Update the score variable
     localStorage.setItem("distance", score);
-    document.getElementById("hScore").innerHTML = `highScore${score}`;
+    document.getElementById("hScore").innerHTML = `High Score${score}`;
   }
 }
 
