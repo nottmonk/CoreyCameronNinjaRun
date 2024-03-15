@@ -8,8 +8,6 @@
   font-style: normal;
 }
 
-
-
 body {
   background-color: burlywood;
   height: 100vh;
@@ -25,7 +23,6 @@ body {
 }
 
 .container-flex {
- 
   display: flex;
   position: relative;
   width: 60%;
@@ -33,7 +30,6 @@ body {
   border: 10px solid;
   align-items: flex-end;
   overflow: hidden;
- 
 }
 
 .img {
@@ -52,26 +48,20 @@ body {
 
 @keyframes bckAnimation {
   0% {
-    transform: translateX(
-      0
-    ); 
+    transform: translateX(0);
   }
   100% {
-    transform: translateX(
-      -50%
-    ); 
+    transform: translateX(-50%);
   }
-  
 }
 
 .Nin {
-  background-image: url(images/ninja2.png);
+  background-image: url(images/ninja.gif);
   background-size: cover;
   display: inline-block;
   width: 50px;
   height: 50px;
   position: center;
-  
 }
 
 .jmp {
@@ -108,8 +98,12 @@ body {
 }
 
 #obst {
+  background-image: url("images/traffic\ cone.png");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
   display: inline-block;
-  background-color: rgb(240, 10, 10);
+  /* background-color: rgb(240, 10, 10); */
   width: 30px;
   height: 40px;
 }
@@ -169,12 +163,12 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    font-size: 3vw; 
+    font-size: 3vw;
   }
 }
 
 @media screen and (max-width: 480px) {
   body {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 }
