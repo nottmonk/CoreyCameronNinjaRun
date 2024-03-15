@@ -19,7 +19,7 @@ function Jump() {
     }, 800);
   }
 }
-
+// function for enemy to speed up(could be revamped)
 function speedUp() {
   if (startDistance >= 100) {
     enemy.classList.remove("speedStart");
@@ -50,7 +50,7 @@ function checkCollision() {
     playerBound.bottom >= enemyBound.top &&
     playerBound.top <= enemyBound.bottom
     // enemyBound.left < playerBound.right -60 &&
-    // playerBound.bottom <= enemyBound.top -30
+    // playerBound.bottom <= enemyBound.top -30 // future updates
   ) {
     gameOver();
     stopEnemyAnimation();
@@ -87,19 +87,14 @@ function stopBackground() {
   bckImg.classList.remove("bckImg");
 }
 
-function enemyAnimation() {
-  startE = window.requestAnimationFrame(enemy);
-}
-
 function stopEnemyAnimation() {
-  //    stopE = window.cancelAnimationFrame(startE)
   enemy.classList.remove("speedStart");
   enemy.classList.remove("speedFirst");
   enemy.classList.remove("speedSecond");
   enemy.classList.remove("speedThird");
   enemy.classList.remove("speedForth");
 }
-
+//---------------this code broke have no clue why but keeping it as a reffrence-----------
 // function checkScore() {
 //   if (parseInt(distant.innerText) >= score) {
 //     localStorage.setItem("distance", parseInt(distant.innerText)) ;
