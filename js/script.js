@@ -58,7 +58,7 @@ function checkCollision() {
     stopBackground();
     // console.log("Collision!");
   } else {
-    // playerBound.right <= 30 && playerBound.left <= 10;
+    // playerBound.right <= 30 && playerBound.left <= 10; / more future update
     speedUp();
     // console.log("Not touching");
   }
@@ -104,7 +104,7 @@ function stopEnemyAnimation() {
 //     return;
 //   }
 // }
-
+// thank you John Bass for helping me with fixing my score //
 function checkScore() {
   if (startDistance >= score) {
     score = startDistance; // Update the score variable
