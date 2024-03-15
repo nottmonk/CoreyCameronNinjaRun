@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url(images/Designer.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: fantasy;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 1px rgb(122, 93, 93);
+    font-size: 100px;
+}
+
+.splash-screen {
+    text-align: center;
+}
+
+@media screen and (max-height: 600px) {
+    .splash-screen {
+        margin-top: 20%;
+    }
+}
+
+@media screen and (min-height: 601px) {
+    .splash-screen {
+        margin-top: 10%;
+    }
+}
+
+
+
+#play-button{
+    padding: 3vw 6vw;
+    font-size: 3vw;
+    background-color: #899297;
+    color: rgb(252, 252, 252);
+    border: none;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#play-button:hover {
+    background-color: #393a3b;
+}

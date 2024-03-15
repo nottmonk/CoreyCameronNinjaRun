@@ -80,7 +80,7 @@ document.addEventListener("keydown", function (evt) {
 function gameOver() {
   clearInterval(isAlive);
   clearInterval(counter);
-  game.innerHTML = "GameOver";
+  game.innerHTML = "GAME OVER";
 }
 
 function stopBackground() {

@@ -87,7 +87,7 @@ body {
 
 .jmp {
   animation: moving 0.7s linear;
-  animation-delay: 0.6ms;
+  animation-delay: 0.3ms;
 }
 
 @keyframes moving {
